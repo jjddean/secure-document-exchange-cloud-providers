@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "."
+  },
+  "include": [
+    "index.ts",
+    "types.ts",
+    "providers.ts",
+    "cloud-config.ts",
+    "google/**/*.ts",
+    "google/**/*.tsx",
+    "microsoft/**/*.ts",
+    "microsoft/**/*.tsx"
+  ],
+  "exclude": ["tests", "dist", "node_modules"]
+}
